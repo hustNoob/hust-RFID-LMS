@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>744</width>
+    <height>490</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图书馆管理系统</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_main">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_top">
+     <item>
+      <spacer name="spacer_left">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_picture">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_title">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>24</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>图书馆管理系统</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="spacer_right">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_connect">
+       <property name="title">
+        <string>连接控制</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_conn">
+        <item>
+         <widget class="QComboBox" name="comboBox_serial"/>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_baud"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_connect">
+          <property name="text">
+           <string>连接</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_disconnect">
+          <property name="text">
+           <string>断开</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget_main"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

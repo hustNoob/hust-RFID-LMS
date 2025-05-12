@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Record</class>
+ <widget class="QWidget" name="Record">
+  <property name="windowTitle">
+   <string>借阅记录管理</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_main">
+
+   <!-- 顶部：筛选输入区 -->
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_edit">
+     <item>
+      <widget class="QLabel" name="label_userid">
+       <property name="text">
+        <string>用户卡号</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_userid"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_bookid">
+       <property name="text">
+        <string>书籍卡号</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_bookid"/>
+     </item>
+    </layout>
+   </item>
+
+   <!-- 按钮区 -->
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_button">
+     <item>
+      <widget class="QPushButton" name="pushButton_select">
+       <property name="text">
+        <string>搜索</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_delete">
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="spacer_1">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+
+   <!-- 列表区 -->
+   <item>
+    <widget class="QGroupBox" name="groupBox_table">
+     <property name="title">
+      <string>借书列表</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_table">
+      <item>
+       <widget class="QTableWidget" name="tableWidget_record"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <!-- 状态栏 -->
+   <item>
+    <widget class="QLabel" name="label_status">
+     <property name="text">
+      <string>可通过刷卡搜索查看某本书或某个用户的记录</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Borrow_Return</class>
+ <widget class="QWidget" name="Borrow_Return">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>533</width>
+    <height>432</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>借书还书</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_main">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox_user">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>用户信息</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_user">
+      <item>
+       <layout class="QHBoxLayout" name="hLayout_cardid">
+        <item>
+         <widget class="QLabel" name="label_cardid">
+          <property name="text">
+           <string>卡号：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_cardid">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="hLayout_name">
+        <item>
+         <widget class="QLabel" name="label_name">
+          <property name="text">
+           <string>姓名：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_name">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="hLayout_gender">
+        <item>
+         <widget class="QLabel" name="label_gender">
+          <property name="text">
+           <string>性别：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_gender">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="hLayout_age">
+        <item>
+         <widget class="QLabel" name="label_age">
+          <property name="text">
+           <string>年龄：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_age">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="hLayout_tel">
+        <item>
+         <widget class="QLabel" name="label_tel">
+          <property name="text">
+           <string>手机：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_tel">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="hLayout_borrowreturn">
+        <item>
+         <widget class="QRadioButton" name="radioButton_borrow">
+          <property name="text">
+           <string>借书</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_return">
+          <property name="text">
+           <string>还书</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1" rowspan="2">
+    <widget class="QGroupBox" name="groupBox_books">
+     <property name="title">
+      <string>借书列表</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_books">
+      <item>
+       <widget class="QTableWidget" name="tableWidget_books"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_info">
+     <property name="text">
+      <string>欢迎：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QLabel" name="label_status">
+     <property name="text">
+      <string>请先刷卡登录！</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

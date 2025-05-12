@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/book.jpg</file>
+        <file>img/lib.png</file>
+        <file>img/hust.webp</file>
+    </qresource>
+</RCC>
